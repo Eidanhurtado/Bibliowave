@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliowave - E-books Profesionales y Ciberseguridad Corporativa</title>
+    <meta name="description" content="Plataforma profesional de e-books especializados y contenido de ciberseguridad corporativa. El futuro de la educación digital empresarial.">
+    <meta name="keywords" content="e-books profesionales, ciberseguridad corporativa, libros digitales empresariales, tecnología avanzada, educación digital"
+    <link rel="canonical" href="https://bibliowave.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1 class="logo">Bibliowave</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ebooks.html" class="nav-link">E-books IA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Ciberseguridad</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="biblioteca.html" class="nav-link cart-link">
+                        <span class="cart-text">Tu Biblioteca</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    El futuro de la
+                    <span class="gradient-text">lectura digital</span>
+                </h1>
+                <p class="hero-description">
+                    Plataforma profesional de e-books generados por inteligencia artificial 
+                    y contenido especializado en ciberseguridad corporativa.
+                </p>
+                <div class="hero-buttons">
+                    <a href="ebooks.html" class="btn btn-primary">Explorar E-books</a>
+                    <a href="blog.html" class="btn btn-secondary">Leer Blog</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="futuristic-frame">
+                    <div class="frame-container">
+                        <!-- Esquinas futuristas -->
+                        <div class="corner corner-tl"></div>
+                        <div class="corner corner-tr"></div>
+                        <div class="corner corner-bl"></div>
+                        <div class="corner corner-br"></div>
+                        
+                        <!-- Líneas de energía -->
+                        <div class="energy-lines">
+                            <div class="energy-line energy-line-1"></div>
+                            <div class="energy-line energy-line-2"></div>
+                            <div class="energy-line energy-line-3"></div>
+                            <div class="energy-line energy-line-4"></div>
+                        </div>
+                        
+                        <!-- Marco principal -->
+                        <div class="main-frame">
+                            <!-- Imagen principal -->
+                            <div class="hero-image-container">
+                                <img src="hero-image.svg" alt="Bibliowave E-books Platform" class="hero-main-image">
+                                
+                                <!-- Overlay futurista -->
+                                <div class="futuristic-overlay">
+                                    <!-- Elementos de HUD -->
+                                    <div class="hud-element hud-top-left">
+                                        <div class="hud-line"></div>
+                                        <span class="hud-text">DIGITAL LIBRARY</span>
+                                    </div>
+                                    
+                                    <div class="hud-element hud-top-right">
+                                        <div class="hud-circle"></div>
+                                        <span class="hud-text">ONLINE</span>
+                                    </div>
+                                    
+                                    <div class="hud-element hud-bottom-left">
+                                        <div class="hud-bar">
+                                            <div class="hud-bar-fill"></div>
+                                        </div>
+                                        <span class="hud-text">LOADING...</span>
+                                    </div>
+                                    
+                                    <div class="hud-element hud-bottom-right">
+                                        <div class="hud-scanner"></div>
+                                        <span class="hud-text">SCAN COMPLETE</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Partículas flotantes -->
+                                <div class="particles">
+                                    <div class="particle particle-1"></div>
+                                    <div class="particle particle-2"></div>
+                                    <div class="particle particle-3"></div>
+                                    <div class="particle particle-4"></div>
+                                    <div class="particle particle-5"></div>
+                                    <div class="particle particle-6"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Efectos de resplandor -->
+                        <div class="glow-effects">
+                            <div class="glow glow-1"></div>
+                            <div class="glow glow-2"></div>
+                            <div class="glow glow-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Revolucionando la experiencia digital</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20,11H23V13H20V11M1,11H4V13H1V11M13,1V4H11V1H13M4.92,3.5L7.05,5.64L5.63,7.05L3.5,4.93L4.92,3.5M16.95,5.63L19.07,3.5L20.5,4.93L18.37,7.05L16.95,5.63M12,6A6,6 0 0,1 18,12C18,14.22 16.79,16.16 15,17.2V19A1,1 0 0,1 14,20H10A1,1 0 0,1 9,19V17.2C7.21,16.16 6,14.22 6,12A6,6 0 0,1 12,6M14,21V22A1,1 0 0,1 13,23H11A1,1 0 0,1 10,22V21H14M11,18H13V15.87C14.73,15.43 16,13.86 16,12A4,4 0 0,0 8,12C8,13.86 9.27,15.43 11,15.87V18Z"/>
+                        </svg>
+                    </div>
+                    <h3>E-books especializados</h3>
+                    <p>Contenido único y personalizado de alta calidad, adaptado a las tendencias empresariales actuales y necesidades profesionales.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z"/>
+                        </svg>
+                    </div>
+                    <h3>Contenido estratégico</h3>
+                    <p>Análisis profesional de las tendencias más relevantes del sector tecnológico y digital empresarial.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.9 16,12.4 16,13V16C16,17.1 15.1,18 14,18H10C8.9,18 8,17.1 8,16V13C8,12.4 8.4,11.9 9,11.5V10C9,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.2,9.2 10.2,10V11.5H13.8V10C13.8,9.2 12.8,8.2 12,8.2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Ciberseguridad corporativa</h3>
+                    <p>Soluciones integrales de protección digital para empresas y profesionales en el entorno cibernético actual.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Plataforma optimizada</h3>
+                    <p>Tecnología de vanguardia para una experiencia de usuario fluida y profesional en todos los dispositivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Horas de contenido</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Empresas confiadas</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Artículos de seguridad</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">% Satisfacción</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section Futurista -->
+    <section class="cta-futuristic">
+        <div class="cta-background">
+            <!-- Efectos de fondo -->
+            <div class="cyber-grid"></div>
+            <div class="energy-waves">
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+            </div>
+            <div class="floating-particles">
+                <div class="particle-cta particle-1"></div>
+                <div class="particle-cta particle-2"></div>
+                <div class="particle-cta particle-3"></div>
+                <div class="particle-cta particle-4"></div>
+                <div class="particle-cta particle-5"></div>
+                <div class="particle-cta particle-6"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="cta-futuristic-content">
+                <!-- Título principal con efectos -->
+                <div class="cta-title-container">
+                    <h2 class="cta-futuristic-title">
+                        <span class="title-line">¿Preparado para la</span>
+                        <span class="title-highlight">transformación digital</span>
+                        <span class="title-question">?</span>
+                    </h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <!-- Descripción -->
+                <p class="cta-futuristic-description">
+                    Integre soluciones de vanguardia y acceda a conocimiento especializado para su organización.
+                </p>
+                
+                <!-- Cajones interactivos -->
+                <div class="interactive-panels">
+                    <div class="panel panel-1">
+                        <div class="panel-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2Z"/>
+                            </svg>
+                        </div>
+                        <h3>Innovación</h3>
+                        <p>Tecnología de última generación</p>
+                        <div class="panel-glow"></div>
+                    </div>
+                    
+                    <div class="panel panel-2">
+                        <div class="panel-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.9 16,12.4 16,13V16C16,17.1 15.1,18 14,18H10C8.9,18 8,17.1 8,16V13C8,12.4 8.4,11.9 9,11.5V10C9,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.2,9.2 10.2,10V11.5H13.8V10C13.8,9.2 12.8,8.2 12,8.2Z"/>
+                            </svg>
+                        </div>
+                        <h3>Seguridad</h3>
+                        <p>Protección empresarial avanzada</p>
+                        <div class="panel-glow"></div>
+                    </div>
+                    
+                    <div class="panel panel-3">
+                        <div class="panel-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z"/>
+                            </svg>
+                        </div>
+                        <h3>Crecimiento</h3>
+                        <p>Escalabilidad garantizada</p>
+                        <div class="panel-glow"></div>
+                    </div>
+                </div>
+                
+                <!-- Botón CTA futurista -->
+                <div class="cta-button-container">
+                    <a href="ebooks.html" class="btn-futuristic">
+                        <span class="btn-text">Comenzar transformación</span>
+                        <div class="btn-scanner"></div>
+                        <div class="btn-energy-bars">
+                            <div class="energy-bar"></div>
+                            <div class="energy-bar"></div>
+                            <div class="energy-bar"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Profesional -->
+    <footer class="footer-professional">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand-section">
+                    <div class="brand-logo">
+                        <h3>Bibliowave</h3>
+                        <div class="brand-tagline">
+                            <span class="tagline-text">El futuro de la lectura digital</span>
+                            <div class="tagline-accent"></div>
+                        </div>
+                    </div>
+                    <p class="brand-description">
+                        Plataforma líder en e-books profesionales y soluciones de ciberseguridad empresarial. 
+                        Transformando el conocimiento digital para organizaciones de vanguardia.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-navigation">
+                    <div class="nav-column">
+                        <h4>Productos</h4>
+                        <ul>
+                            <li><a href="ebooks.html">E-books Profesionales</a></li>
+                            <li><a href="blog.html">Blog de Ciberseguridad</a></li>
+                            <li><a href="biblioteca.html">Tu Biblioteca</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="about.html">Acerca de Nosotros</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="#careers">Carreras</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Soporte</h4>
+                        <ul>
+                            <li><a href="#help">Centro de Ayuda</a></li>
+                            <li><a href="#documentation">Documentación</a></li>
+                            <li><a href="#api">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#privacidad">Política de Privacidad</a></li>
+                            <li><a href="#terminos">Términos de Servicio</a></li>
+                            <li><a href="#cookies">Política de Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-professional">
+                <div class="footer-divider"></div>
+                <div class="bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 Bibliowave Technologies. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="footer-badges">
+                        <div class="security-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.9 16,12.4 16,13V16C16,17.1 15.1,18 14,18H10C8.9,18 8,17.1 8,16V13C8,12.4 8.4,11.9 9,11.5V10C9,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.2,9.2 10.2,10V11.5H13.8V10C13.8,9.2 12.8,8.2 12,8.2Z"/>
+                            </svg>
+                            <span>Certificado SSL</span>
+                        </div>
+                        <div class="quality-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2Z"/>
+                            </svg>
+                            <span>Calidad Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
