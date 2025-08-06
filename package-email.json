@@ -1,0 +1,27 @@
+{
+  "name": "bibliowave-email-automation",
+  "version": "1.0.0",
+  "description": "Sistema de automatización de emails para envío de e-books de Bibliowave",
+  "main": "email-automation.js",
+  "scripts": {
+    "start": "node email-automation.js",
+    "dev": "nodemon email-automation.js",
+    "test": "node -e \"console.log('Sistema de emails funcionando')\""
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "email",
+    "automation",
+    "ebook",
+    "download",
+    "bibliowave"
+  ],
+  "author": "Bibliowave Technologies",
+  "license": "MIT"
+} 

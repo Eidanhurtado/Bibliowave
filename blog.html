@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Ciberseguridad - Bibliowave | Amenazas y Protección Digital</title>
+    <meta name="description" content="Mantente protegido en el mundo digital. Aprende sobre las últimas amenazas cibernéticas, delitos digitales y cómo proteger tu información personal y empresarial.">
+    <meta name="keywords" content="ciberseguridad, delitos digitales, amenazas cibernéticas, protección datos, hacking, phishing, malware">
+    <link rel="canonical" href="https://bibliowave.com/blog">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html"><h1 class="logo">Bibliowave</h1></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ebooks.html" class="nav-link">E-books</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link active">Ciberseguridad</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="biblioteca.html" class="nav-link cart-link">
+                        <span class="cart-text">Tu Biblioteca</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Ciberseguridad y <span class="gradient-text">Protección Digital</span></h1>
+                <p>Mantente informado sobre las últimas amenazas digitales, delitos cibernéticos y las mejores prácticas para proteger tu información en el mundo digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <div class="article-placeholder">
+                        <div class="article-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.9 16,12.4 16,13V16C16,17.1 15.1,18 14,18H10C8.9,18 8,17.1 8,16V13C8,12.4 8.4,11.9 9,11.5V10C9,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.2,9.2 10.2,10V11.5H13.8V10C13.8,9.2 12.8,8.2 12,8.2Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="featured-badge">Destacado</div>
+                </div>
+                <div class="featured-text">
+                    <div class="article-meta">
+                        <span class="article-category">Ciberseguridad</span>
+                        <span class="article-date">15 Dic 2024</span>
+                        <span class="reading-time">5 min lectura</span>
+                    </div>
+                    <h2>Los 10 Delitos Cibernéticos Más Peligrosos de 2024</h2>
+                    <p>Descubre las amenazas digitales más sofisticadas que han surgido este año y cómo los ciberdelincuentes están evolucionando sus técnicas para engañar a usuarios y empresas.</p>
+                    <a href="#" class="btn btn-primary">Leer artículo completo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <h2>Explora por categorías</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18,8h-1V6c0-2.76-2.24-5-5-5S7,3.24,7,6v2H6c-1.1,0-2,0.9-2,2v10c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V10C20,8.9,19.1,8,18,8z M12,17c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,17,12,17z M15.1,8H8.9V6c0-1.71,1.39-3.1,3.1-3.1s3.1,1.39,3.1,3.1V8z"/>
+                        </svg>
+                    </div>
+                    <h3>Protección Personal</h3>
+                    <p>Estrategias para proteger datos personales y privacidad digital</p>
+                    <div class="category-count">12 artículos</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,7V3H2V21H22V7H12M6,19H4V17H6V19M6,15H4V13H6V15M6,11H4V9H6V11M6,7H4V5H6V7M10,19H8V17H10V19M10,15H8V13H10V15M10,11H8V9H10V11M10,7H8V5H10V7M20,19H12V17H20V19M20,15H12V13H20V15M20,11H12V9H20V11Z"/>
+                        </svg>
+                    </div>
+                    <h3>Seguridad Empresarial</h3>
+                    <p>Estrategias de ciberseguridad para empresas y organizaciones</p>
+                    <div class="category-count">8 artículos</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"/>
+                        </svg>
+                    </div>
+                    <h3>Amenazas Actuales</h3>
+                    <p>Últimas amenazas y vulnerabilidades en el panorama digital</p>
+                    <div class="category-count">15 artículos</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.5,12C18,12 20,14 20,16.5C20,17.38 19.75,18.21 19.31,18.9L22.39,22L21,23.39L17.88,20.32C17.19,20.75 16.37,21 15.5,21C13,21 11,19 11,16.5C11,14 13,12 15.5,12M15.5,14A2.5,2.5 0 0,0 13,16.5A2.5,2.5 0 0,0 15.5,19A2.5,2.5 0 0,0 18,16.5A2.5,2.5 0 0,0 15.5,14M6.5,9L10,12.5L7.5,15H1V9H6.5M1,5V7H10V5H1Z"/>
+                        </svg>
+                    </div>
+                    <h3>Análisis Forense</h3>
+                    <p>Técnicas de investigación digital y análisis de incidentes</p>
+                    <div class="category-count">6 artículos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Articles -->
+    <section class="recent-articles">
+        <div class="container">
+            <div class="section-header">
+                <h2>Artículos recientes</h2>
+                <div class="article-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="amenazas">Amenazas</button>
+                    <button class="filter-btn" data-filter="proteccion">Protección</button>
+                    <button class="filter-btn" data-filter="empresas">Empresas</button>
+                </div>
+            </div>
+
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card" data-category="amenazas">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <div class="article-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.5,6C20.5,4.89 19.61,4 18.5,4H14L12,2H6C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L20.5,6M7,19L12,16L17,19V8H7V19Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Amenazas</span>
+                            <span class="article-date">12 Dic 2024</span>
+                        </div>
+                        <h3>Nuevas Técnicas de Phishing que Debes Conocer</h3>
+                        <p>Los ciberdelincuentes están utilizando métodos cada vez más sofisticados para robar credenciales. Aprende a identificarlos.</p>
+                        <div class="article-footer">
+                            <span class="reading-time">4 min lectura</span>
+                            <a href="#" class="read-more">Leer más →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-category="proteccion">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <div class="article-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7,14A3,3 0 0,1 10,11A3,3 0 0,1 13,14A3,3 0 0,1 10,17A3,3 0 0,1 7,14M10,12A2,2 0 0,0 8,14A2,2 0 0,0 10,16A2,2 0 0,0 12,14A2,2 0 0,0 10,12M17,3H7A1,1 0 0,0 6,4V20A1,1 0 0,0 7,21H17A1,1 0 0,0 18,20V4A1,1 0 0,0 17,3Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Protección</span>
+                            <span class="article-date">10 Dic 2024</span>
+                        </div>
+                        <h3>Guía Completa de Autenticación de Dos Factores</h3>
+                        <p>Protege tus cuentas con 2FA. Te explicamos qué es, cómo funciona y las mejores aplicaciones disponibles.</p>
+                        <div class="article-footer">
+                            <span class="reading-time">6 min lectura</span>
+                            <a href="#" class="read-more">Leer más →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-category="empresas">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <div class="article-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12,7V3H2V21H22V7H12M6,19H4V17H6V19M6,15H4V13H6V15M6,11H4V9H6V11M6,7H4V5H6V7M10,19H8V17H10V19M10,15H8V13H10V15M10,11H8V9H10V11M10,7H8V5H10V7M20,19H12V17H20V19M20,15H12V13H20V15M20,11H12V9H20V11Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Empresas</span>
+                            <span class="article-date">8 Dic 2024</span>
+                        </div>
+                        <h3>Ransomware: Cómo Proteger tu Empresa</h3>
+                        <p>Estrategias esenciales para prevenir ataques de ransomware y mantener tu negocio protegido ante estas amenazas.</p>
+                        <div class="article-footer">
+                            <span class="reading-time">8 min lectura</span>
+                            <a href="#" class="read-more">Leer más →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-category="amenazas">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <div class="article-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Amenazas</span>
+                            <span class="article-date">5 Dic 2024</span>
+                        </div>
+                        <h3>Malware en Aplicaciones Móviles: Casos Reales</h3>
+                        <p>Análisis de los casos más recientes de malware encontrado en apps móviles y cómo evitar ser víctima.</p>
+                        <div class="article-footer">
+                            <span class="reading-time">5 min lectura</span>
+                            <a href="#" class="read-more">Leer más →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-category="proteccion">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <div class="article-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.9 16,12.4 16,13V16C16,17.1 15.1,18 14,18H10C8.9,18 8,17.1 8,16V13C8,12.4 8.4,11.9 9,11.5V10C9,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.2,9.2 10.2,10V11.5H13.8V10C13.8,9.2 12.8,8.2 12,8.2Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Protección</span>
+                            <span class="article-date">3 Dic 2024</span>
+                        </div>
+                        <h3>VPN: Todo lo que Necesitas Saber en 2024</h3>
+                        <p>Guía actualizada sobre redes privadas virtuales, qué buscar al elegir una VPN y las mejores opciones del mercado.</p>
+                        <div class="article-footer">
+                            <span class="reading-time">7 min lectura</span>
+                            <a href="#" class="read-more">Leer más →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-category="empresas">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <div class="article-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M22,21H2V3H4V19H6V10H10V19H12V6H16V19H18V14H22V21Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Empresas</span>
+                            <span class="article-date">1 Dic 2024</span>
+                        </div>
+                        <h3>Plan de Respuesta a Incidentes Cibernéticos</h3>
+                        <p>Cómo crear un plan efectivo para responder rápidamente a incidentes de seguridad en tu organización.</p>
+                        <div class="article-footer">
+                            <span class="reading-time">10 min lectura</span>
+                            <a href="#" class="read-more">Leer más →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn btn-secondary" id="loadMoreArticles">Cargar más artículos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Tips -->
+    <section class="security-tips">
+        <div class="container">
+            <h2>Consejos rápidos de seguridad</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7,14A3,3 0 0,1 10,11A3,3 0 0,1 13,14A3,3 0 0,1 10,17A3,3 0 0,1 7,14M10,12A2,2 0 0,0 8,14A2,2 0 0,0 10,16A2,2 0 0,0 12,14A2,2 0 0,0 10,12M17,3H7A1,1 0 0,0 6,4V20A1,1 0 0,0 7,21H17A1,1 0 0,0 18,20V4A1,1 0 0,0 17,3Z"/>
+                        </svg>
+                    </div>
+                    <h4>Contraseñas únicas</h4>
+                    <p>Implementar contraseñas diferentes para cada cuenta y utilizar gestores de contraseñas corporativos.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21,10.12H14.22L16.96,7.3C14.23,4.6 9.81,4.5 7.08,7.2C4.35,9.91 4.35,14.28 7.08,17C9.81,19.7 14.23,19.7 16.96,17C18.32,15.65 19,14.08 19,12.1H21C21,14.08 20.12,16.65 18.36,18.39C14.85,21.87 9.15,21.87 5.64,18.39C2.14,14.92 2.11,9.28 5.62,5.81C9.13,2.34 14.76,2.34 18.27,5.81L21,3V10.12M12.5,8V12.25L16,14.33L15.28,15.54L11,13V8H12.5Z"/>
+                        </svg>
+                    </div>
+                    <h4>Actualizaciones regulares</h4>
+                    <p>Mantener sistemas operativos y aplicaciones actualizados con los últimos parches de seguridad.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z"/>
+                        </svg>
+                    </div>
+                    <h4>Descargas seguras</h4>
+                    <p>Descargar aplicaciones únicamente desde fuentes oficiales y verificar permisos solicitados.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                        </svg>
+                    </div>
+                    <h4>Navegación segura</h4>
+                    <p>Verificar conexiones HTTPS y certificados SSL antes de compartir información confidencial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Mantente protegido con nuestras alertas de seguridad</h2>
+                <p>Recibe notificaciones sobre nuevas amenazas y consejos de protección directamente en tu email.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Profesional -->
+    <footer class="footer-professional">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand-section">
+                    <div class="brand-logo">
+                        <h3>Bibliowave</h3>
+                        <div class="brand-tagline">
+                            <span class="tagline-text">El futuro de la lectura digital</span>
+                            <div class="tagline-accent"></div>
+                        </div>
+                    </div>
+                    <p class="brand-description">
+                        Plataforma líder en e-books profesionales y soluciones de ciberseguridad empresarial. 
+                        Transformando el conocimiento digital para organizaciones de vanguardia.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-navigation">
+                    <div class="nav-column">
+                        <h4>Productos</h4>
+                        <ul>
+                            <li><a href="ebooks.html">E-books Profesionales</a></li>
+                            <li><a href="blog.html">Blog de Ciberseguridad</a></li>
+                            <li><a href="biblioteca.html">Tu Biblioteca</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="about.html">Acerca de Nosotros</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="#careers">Carreras</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Soporte</h4>
+                        <ul>
+                            <li><a href="#help">Centro de Ayuda</a></li>
+                            <li><a href="#documentation">Documentación</a></li>
+                            <li><a href="#api">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#privacidad">Política de Privacidad</a></li>
+                            <li><a href="#terminos">Términos de Servicio</a></li>
+                            <li><a href="#cookies">Política de Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-professional">
+                <div class="footer-divider"></div>
+                <div class="bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 Bibliowave Technologies. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="footer-badges">
+                        <div class="security-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.9 16,12.4 16,13V16C16,17.1 15.1,18 14,18H10C8.9,18 8,17.1 8,16V13C8,12.4 8.4,11.9 9,11.5V10C9,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.2,9.2 10.2,10V11.5H13.8V10C13.8,9.2 12.8,8.2 12,8.2Z"/>
+                            </svg>
+                            <span>Certificado SSL</span>
+                        </div>
+                        <div class="quality-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2Z"/>
+                            </svg>
+                            <span>Calidad Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html> 

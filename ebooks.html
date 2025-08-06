@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-books Profesionales - Bibliowave | Libros Digitales Especializados</title>
+    <meta name="description" content="Descubre nuestra colección exclusiva de e-books profesionales. Contenido único, innovador y adaptado a las tendencias empresariales actuales.">
+    <meta name="keywords" content="e-books profesionales, libros digitales empresariales, contenido especializado, libros digitales innovadores, tendencias tecnológicas">
+    <link rel="canonical" href="https://bibliowave.com/ebooks">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html"><h1 class="logo">Bibliowave</h1></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ebooks.html" class="nav-link active">E-books</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Ciberseguridad</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="biblioteca.html" class="nav-link cart-link">
+                        <span class="cart-text">Tu Biblioteca</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>E-books <span class="gradient-text">Profesionales</span></h1>
+                <p>Explora nuestra colección exclusiva de libros digitales especializados, con contenido único y adaptado a las tendencias más actuales del mundo empresarial y tecnológico.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters">
+        <div class="container">
+            <div class="filters-container">
+                <h3>Filtrar por categoría</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="tecnologia">Tecnología</button>
+                    <button class="filter-btn" data-filter="business">Business</button>
+                    <button class="filter-btn" data-filter="futuro">Futuro Digital</button>
+                    <button class="filter-btn" data-filter="innovacion">Innovación</button>
+                    <button class="filter-btn" data-filter="tendencias">Tendencias</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar e-books..." id="searchInput">
+                    <div class="search-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-books Grid -->
+    <section class="ebooks-section">
+        <div class="container">
+            <div class="ebooks-grid">
+                <!-- E-book Card 1 - Aprende a utilizar la IA -->
+                <div class="ebook-card featured-ebook" data-category="tecnologia">
+                    <div class="ebook-image">
+                        <img src="aprende-ia-portada.png" alt="Aprende a utilizar la IA - Portada del libro" class="ebook-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="ebook-placeholder" style="display: none;">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2Z"/>
+                                    </svg>
+                                </div>
+                                <h4>Aprende a utilizar la IA</h4>
+                                <p>Portada del libro</p>
+                            </div>
+                        </div>
+                        <div class="ebook-overlay">
+                            <div class="overlay-badge">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2Z"/>
+                                </svg>
+                                <span>Nuevo</span>
+                            </div>
+                            <div class="overlay-actions">
+                                <button class="quick-preview" data-id="aprende-ia" title="Vista previa">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ebook-content">
+                        <h3>Aprende a utilizar la IA</h3>
+                        <p class="ebook-subtitle">Aprende a rentabilizar las inteligencias artificiales</p>
+                        <p class="ebook-description">Descubre cómo aprovechar el poder de la inteligencia artificial para transformar tu negocio y carrera profesional. Una guía completa que te enseña desde los conceptos básicos hasta estrategias avanzadas de implementación y monetización de la IA en el mundo real.</p>
+                        <div class="ebook-meta">
+                            <span class="ebook-category">Tecnología</span>
+                            <span class="ebook-rating">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
+                                </svg>
+                                <span>4.9</span>
+                            </span>
+                            <span class="ebook-price">€29.99</span>
+                        </div>
+                        <div class="ebook-features">
+                            <span class="feature-tag">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                                </svg>
+                                Guía práctica
+                            </span>
+                            <span class="feature-tag">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2Z"/>
+                                </svg>
+                                Casos reales
+                            </span>
+                            <span class="feature-tag">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                                </svg>
+                                Herramientas
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ebook-actions">
+                        <button class="btn btn-primary add-to-cart" data-price="29.99" data-id="aprende-ia" data-title="Aprende a utilizar la IA">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                            </svg>
+                            <span>Añadir a biblioteca - €29.99</span>
+                        </button>
+                        <button class="btn btn-secondary buy-now" data-price="29.99" data-id="aprende-ia" data-title="Aprende a utilizar la IA">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18,8h-1V6c0-2.76-2.24-5-5-5S7,3.24,7,6v2H6c-1.1,0-2,0.9-2,2v10c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V10C20,8.9,19.1,8,18,8z M12,17c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,17,12,17z M15.1,8H8.9V6c0-1.71,1.39-3.1,3.1-3.1s3.1,1.39,3.1,3.1V8z"/>
+                            </svg>
+                            <span>Comprar ahora</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- E-book Card 2 -->
+                <div class="ebook-card" data-category="cybersecurity">
+                    <div class="ebook-image">
+                        <div class="ebook-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ebook-content">
+                        <h3>Ciberseguridad Empresarial Avanzada</h3>
+                        <p>Protege tu empresa contra las amenazas digitales más sofisticadas con estrategias profesionales y frameworks de seguridad.</p>
+                        <div class="ebook-meta">
+                            <span class="ebook-category">Cybersecurity</span>
+                            <span class="ebook-price">€34.99</span>
+                        </div>
+                    </div>
+                    <div class="ebook-actions">
+                        <button class="btn btn-primary add-to-cart" data-price="34.99" data-id="ciberseguridad-empresarial">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                            </svg>
+                            <span>Añadir a biblioteca - €34.99</span>
+                        </button>
+                        <button class="btn btn-secondary buy-now" data-price="34.99" data-id="ciberseguridad-empresarial">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18,8h-1V6c0-2.76-2.24-5-5-5S7,3.24,7,6v2H6c-1.1,0-2,0.9-2,2v10c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V10C20,8.9,19.1,8,18,8z M12,17c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,17,12,17z M15.1,8H8.9V6c0-1.71,1.39-3.1,3.1-3.1s3.1,1.39,3.1,3.1V8z"/>
+                            </svg>
+                            <span>Comprar ahora</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- E-book Card 3 -->
+                <div class="ebook-card" data-category="innovation">
+                    <div class="ebook-image">
+                        <div class="ebook-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ebook-content">
+                        <h3>Innovación y Transformación Digital</h3>
+                        <p>Lidera el cambio en tu organización con metodologías de innovación disruptiva y frameworks de transformación digital.</p>
+                        <div class="ebook-meta">
+                            <span class="ebook-category">Innovation</span>
+                            <span class="ebook-price">€19.99</span>
+                        </div>
+                    </div>
+                    <div class="ebook-actions">
+                        <button class="btn btn-primary add-to-cart" data-price="19.99" data-id="innovacion-digital">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                            </svg>
+                            <span>Añadir a biblioteca - €19.99</span>
+                        </button>
+                        <button class="btn btn-secondary buy-now" data-price="19.99" data-id="innovacion-digital">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18,8h-1V6c0-2.76-2.24-5-5-5S7,3.24,7,6v2H6c-1.1,0-2,0.9-2,2v10c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V10C20,8.9,19.1,8,18,8z M12,17c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,17,12,17z M15.1,8H8.9V6c0-1.71,1.39-3.1,3.1-3.1s3.1,1.39,3.1,3.1V8z"/>
+                            </svg>
+                            <span>Comprar ahora</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- E-book Card 4 -->
+                <div class="ebook-card" data-category="business">
+                    <div class="ebook-image">
+                        <div class="ebook-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ebook-content">
+                        <h3>Liderazgo Ejecutivo Moderno</h3>
+                        <p>Desarrolla habilidades de liderazgo para la era digital y gestiona equipos remotos con metodologías innovadoras.</p>
+                        <div class="ebook-meta">
+                            <span class="ebook-category">Business</span>
+                            <span class="ebook-price">€27.99</span>
+                        </div>
+                    </div>
+                    <div class="ebook-actions">
+                        <button class="btn btn-primary add-to-cart" data-price="27.99" data-id="liderazgo-ejecutivo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                            </svg>
+                            <span>Añadir a biblioteca - €27.99</span>
+                        </button>
+                        <button class="btn btn-secondary buy-now" data-price="27.99" data-id="liderazgo-ejecutivo">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18,8h-1V6c0-2.76-2.24-5-5-5S7,3.24,7,6v2H6c-1.1,0-2,0.9-2,2v10c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V10C20,8.9,19.1,8,18,8z M12,17c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,17,12,17z M15.1,8H8.9V6c0-1.71,1.39-3.1,3.1-3.1s3.1,1.39,3.1,3.1V8z"/>
+                            </svg>
+                            <span>Comprar ahora</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- E-book Card 5 -->
+                <div class="ebook-card" data-category="cybersecurity">
+                    <div class="ebook-image">
+                        <div class="ebook-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,7C10.6,7 9.2,8.6 9.2,10V11.2C8.6,11.6 8,12.1 8,12.8V16.2C8,17.3 8.9,18.2 10,18.2H14C15.1,18.2 16,17.3 16,16.2V12.8C16,12.1 15.4,11.6 14.8,11.2V10C14.8,8.6 13.4,7 12,7M12,8.2C12.8,8.2 13.8,9.2 13.8,10V11.2H10.2V10C10.2,9.2 11.2,8.2 12,8.2Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ebook-content">
+                        <h3>Hacking Ético y Pentesting</h3>
+                        <p>Aprende las técnicas profesionales de ciberseguridad ofensiva para proteger sistemas empresariales de forma ética.</p>
+                        <div class="ebook-meta">
+                            <span class="ebook-category">Cybersecurity</span>
+                            <span class="ebook-price">€39.99</span>
+                        </div>
+                    </div>
+                    <div class="ebook-actions">
+                        <button class="btn btn-primary add-to-cart" data-price="39.99" data-id="hacking-etico">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                            </svg>
+                            <span>Añadir a biblioteca - €39.99</span>
+                        </button>
+                        <button class="btn btn-secondary buy-now" data-price="39.99" data-id="hacking-etico">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18,8h-1V6c0-2.76-2.24-5-5-5S7,3.24,7,6v2H6c-1.1,0-2,0.9-2,2v10c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V10C20,8.9,19.1,8,18,8z M12,17c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,17,12,17z M15.1,8H8.9V6c0-1.71,1.39-3.1,3.1-3.1s3.1,1.39,3.1,3.1V8z"/>
+                            </svg>
+                            <span>Comprar ahora</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- E-book Card 6 -->
+                <div class="ebook-card" data-category="innovation">
+                    <div class="ebook-image">
+                        <div class="ebook-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ebook-content">
+                        <h3>Inteligencia Artificial para Empresas</h3>
+                        <p>Implementa soluciones de IA que transformen tu modelo de negocio y automaticen procesos clave de forma estratégica.</p>
+                        <div class="ebook-meta">
+                            <span class="ebook-category">Innovation</span>
+                            <span class="ebook-price">€32.99</span>
+                        </div>
+                    </div>
+                    <div class="ebook-actions">
+                        <button class="btn btn-primary add-to-cart" data-price="32.99" data-id="ia-empresas">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                            </svg>
+                            <span>Añadir a biblioteca - €32.99</span>
+                        </button>
+                        <button class="btn btn-secondary buy-now" data-price="32.99" data-id="ia-empresas">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18,8h-1V6c0-2.76-2.24-5-5-5S7,3.24,7,6v2H6c-1.1,0-2,0.9-2,2v10c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V10C20,8.9,19.1,8,18,8z M12,17c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,17,12,17z M15.1,8H8.9V6c0-1.71,1.39-3.1,3.1-3.1s3.1,1.39,3.1,3.1V8z"/>
+                            </svg>
+                            <span>Comprar ahora</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-secondary" id="loadMore">Cargar más e-books</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>¿Quieres acceso anticipado a nuestro contenido premium?</h2>
+                <p>Suscríbete a nuestro newsletter y recibe notificaciones sobre los últimos lanzamientos y contenido exclusivo para profesionales.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Profesional -->
+    <footer class="footer-professional">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand-section">
+                    <div class="brand-logo">
+                        <h3>Bibliowave</h3>
+                        <div class="brand-tagline">
+                            <span class="tagline-text">El futuro de la lectura digital</span>
+                            <div class="tagline-accent"></div>
+                        </div>
+                    </div>
+                    <p class="brand-description">
+                        Plataforma líder en e-books profesionales y soluciones de ciberseguridad empresarial. 
+                        Transformando el conocimiento digital para organizaciones de vanguardia.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-navigation">
+                    <div class="nav-column">
+                        <h4>Productos</h4>
+                        <ul>
+                            <li><a href="ebooks.html">E-books Profesionales</a></li>
+                            <li><a href="blog.html">Blog de Ciberseguridad</a></li>
+                            <li><a href="biblioteca.html">Tu Biblioteca</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="about.html">Acerca de Nosotros</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="#careers">Carreras</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Soporte</h4>
+                        <ul>
+                            <li><a href="#help">Centro de Ayuda</a></li>
+                            <li><a href="#documentation">Documentación</a></li>
+                            <li><a href="#api">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#privacidad">Política de Privacidad</a></li>
+                            <li><a href="#terminos">Términos de Servicio</a></li>
+                            <li><a href="#cookies">Política de Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-professional">
+                <div class="footer-divider"></div>
+                <div class="bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 Bibliowave Technologies. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="footer-badges">
+                        <div class="security-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.9 16,12.4 16,13V16C16,17.1 15.1,18 14,18H10C8.9,18 8,17.1 8,16V13C8,12.4 8.4,11.9 9,11.5V10C9,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.2,9.2 10.2,10V11.5H13.8V10C13.8,9.2 12.8,8.2 12,8.2Z"/>
+                            </svg>
+                            <span>Certificado SSL</span>
+                        </div>
+                        <div class="quality-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2Z"/>
+                            </svg>
+                            <span>Calidad Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="ebooks.js"></script>
+</body>
+</html> 

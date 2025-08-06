@@ -1,0 +1,33 @@
+{
+  "name": "bibliowave",
+  "version": "1.0.0",
+  "description": "Plataforma profesional de e-books con pagos Stripe",
+  "main": "stripe-backend.js",
+  "scripts": {
+    "start": "node stripe-backend.js",
+    "dev": "nodemon stripe-backend.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ebooks",
+    "stripe",
+    "payments",
+    "bibliowave",
+    "digital-products"
+  ],
+  "author": "Eidan Hurtado",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.2",
+    "nodemailer": "^7.0.5",
+    "stripe": "^14.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

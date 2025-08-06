@@ -1,0 +1,117 @@
+<svg width="300" height="400" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes para el fondo y elementos -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5f5f5;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="robotGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f0f0f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="eyeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo del libro -->
+  <rect width="300" height="400" fill="url(#bgGradient)" />
+  
+  <!-- Título principal -->
+  <text x="30" y="60" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2c3e50">
+    APRENDE A
+  </text>
+  <text x="30" y="100" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2c3e50">
+    UTILIZAR LA IA
+  </text>
+  
+  <!-- Subtítulo -->
+  <text x="30" y="130" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">
+    APRENDE A RENTABILIZAR
+  </text>
+  <text x="30" y="150" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">
+    LAS INTELIGENCIAS ARTIFICIALES
+  </text>
+  
+  <!-- Robot/IA representación -->
+  <g transform="translate(150, 180)">
+    <!-- Cabeza del robot -->
+    <ellipse cx="0" cy="0" rx="60" ry="70" fill="url(#robotGradient)" stroke="#bbb" stroke-width="2"/>
+    
+    <!-- Ojo principal (cámara) -->
+    <circle cx="0" cy="-10" r="25" fill="url(#techGradient)" stroke="#333" stroke-width="2"/>
+    <circle cx="0" cy="-10" r="18" fill="url(#eyeGradient)" opacity="0.8"/>
+    <circle cx="0" cy="-10" r="12" fill="#ffffff" opacity="0.6"/>
+    <circle cx="0" cy="-10" r="8" fill="url(#eyeGradient)"/>
+    <circle cx="0" cy="-10" r="3" fill="#ffffff"/>
+    
+    <!-- Detalles tecnológicos -->
+    <rect x="-45" y="15" width="15" height="3" fill="#00d4ff" opacity="0.7"/>
+    <rect x="-45" y="22" width="10" height="2" fill="#00d4ff" opacity="0.5"/>
+    <rect x="-45" y="28" width="20" height="2" fill="#00d4ff" opacity="0.6"/>
+    
+    <rect x="30" y="15" width="15" height="3" fill="#00d4ff" opacity="0.7"/>
+    <rect x="35" y="22" width="10" height="2" fill="#00d4ff" opacity="0.5"/>
+    <rect x="25" y="28" width="20" height="2" fill="#00d4ff" opacity="0.6"/>
+    
+    <!-- Cuello/conexión -->
+    <rect x="-15" y="60" width="30" height="20" fill="url(#techGradient)" rx="5"/>
+    
+    <!-- Cuerpo -->
+    <rect x="-50" y="80" width="100" height="80" fill="url(#robotGradient)" stroke="#bbb" stroke-width="2" rx="10"/>
+    
+    <!-- Panel de control en el pecho -->
+    <rect x="-25" y="100" width="50" height="30" fill="url(#techGradient)" rx="5"/>
+    <circle cx="-15" cy="115" r="3" fill="#00d4ff"/>
+    <circle cx="0" cy="115" r="3" fill="#00ff00"/>
+    <circle cx="15" cy="115" r="3" fill="#ff6b6b"/>
+    
+    <!-- Líneas de datos -->
+    <line x1="-20" y1="145" x2="20" y2="145" stroke="#00d4ff" stroke-width="2" opacity="0.7"/>
+    <line x1="-15" y1="150" x2="25" y2="150" stroke="#00d4ff" stroke-width="1" opacity="0.5"/>
+    <line x1="-25" y1="155" x2="15" y2="155" stroke="#00d4ff" stroke-width="1" opacity="0.6"/>
+  </g>
+  
+  <!-- Elementos flotantes de IA -->
+  <g opacity="0.6">
+    <!-- Chip/procesador izquierdo -->
+    <rect x="30" y="320" width="25" height="25" fill="#2c3e50" rx="3"/>
+    <rect x="32" y="322" width="21" height="21" fill="#00d4ff" rx="2" opacity="0.7"/>
+    <circle cx="42.5" cy="332.5" r="3" fill="#ffffff"/>
+    
+    <!-- Conexiones -->
+    <line x1="55" y1="332" x2="85" y2="332" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+    <line x1="85" y1="332" x2="85" y2="300" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+    <line x1="85" y1="300" x2="120" y2="300" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+    
+    <!-- Chip/procesador derecho -->
+    <rect x="245" y="300" width="25" height="25" fill="#2c3e50" rx="3"/>
+    <rect x="247" y="302" width="21" height="21" fill="#00d4ff" rx="2" opacity="0.7"/>
+    <circle cx="257.5" cy="312.5" r="3" fill="#ffffff"/>
+  </g>
+  
+  <!-- Decoraciones adicionales -->
+  <g opacity="0.3">
+    <!-- Líneas de código/datos -->
+    <line x1="20" y1="380" x2="100" y2="380" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="200" y1="380" x2="280" y2="380" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="20" y1="385" x2="80" y2="385" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="220" y1="385" x2="280" y2="385" stroke="#00d4ff" stroke-width="1"/>
+  </g>
+  
+  <!-- Texto del lomo del libro (lado izquierdo) -->
+  <g transform="rotate(-90 15 200)">
+    <text x="15" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50" text-anchor="middle">
+      APRENDE A UTILIZAR LA IA
+    </text>
+  </g>
+</svg> 

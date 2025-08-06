@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Biblioteca - Bibliowave | Carrito de Compras</title>
+    <meta name="description" content="Revisa tu biblioteca personal de e-books seleccionados y procede con tu compra segura en Bibliowave.">
+    <meta name="keywords" content="carrito compras e-books, biblioteca personal, comprar libros digitales, checkout seguro">
+    <link rel="canonical" href="https://bibliowave.com/biblioteca">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html"><h1 class="logo">Bibliowave</h1></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ebooks.html" class="nav-link">E-books</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Ciberseguridad</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="biblioteca.html" class="nav-link active cart-link">
+                        <span class="cart-text">Tu Biblioteca</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Tu <span class="gradient-text">Biblioteca</span> Personal</h1>
+                <p>Revisa tu colección seleccionada de e-books profesionales y procede con tu compra segura.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-section">
+        <div class="container">
+            <!-- Empty Cart State -->
+            <div class="empty-cart" id="emptyCart">
+                <div class="empty-cart-content">
+                    <div class="empty-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h2>Tu biblioteca está vacía</h2>
+                    <p>Explora nuestra colección de e-books profesionales y comienza a construir tu biblioteca de conocimiento.</p>
+                    <a href="ebooks.html" class="btn btn-primary">Explorar E-books</a>
+                </div>
+            </div>
+
+            <!-- Cart with Items -->
+            <div class="cart-content" id="cartContent" style="display: none;">
+                <div class="cart-layout">
+                    <!-- Items List -->
+                    <div class="cart-items">
+                        <div class="cart-header">
+                            <h2>E-books seleccionados</h2>
+                            <button class="clear-cart" id="clearCart">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"/>
+                                </svg>
+                                Vaciar biblioteca
+                            </button>
+                        </div>
+                        
+                        <div class="items-list" id="itemsList">
+                            <!-- Dynamic cart items will be inserted here -->
+                        </div>
+                    </div>
+
+                    <!-- Cart Summary -->
+                    <div class="cart-summary">
+                        <div class="summary-card">
+                            <h3>Resumen de compra</h3>
+                            
+                            <div class="summary-details">
+                                <div class="summary-row">
+                                    <span>Subtotal</span>
+                                    <span id="subtotalAmount">€0.00</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Descuento biblioteca</span>
+                                    <span id="discountAmount" class="discount">-€0.00</span>
+                                </div>
+                                <div class="summary-row total-row">
+                                    <span>Total</span>
+                                    <span id="totalAmount">€0.00</span>
+                                </div>
+                            </div>
+
+                            <div class="promo-code">
+                                <input type="text" placeholder="Código promocional" id="promoInput">
+                                <button class="apply-promo" id="applyPromo">Aplicar</button>
+                            </div>
+
+                            <div class="checkout-actions">
+                                <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18,8h-1V6c0-2.76-2.24-5-5-5S7,3.24,7,6v2H6c-1.1,0-2,0.9-2,2v10c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V10C20,8.9,19.1,8,18,8z M12,17c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,17,12,17z M15.1,8H8.9V6c0-1.71,1.39-3.1,3.1-3.1s3.1,1.39,3.1,3.1V8z"/>
+                                    </svg>
+                                    Proceder al pago
+                                </button>
+                                <button class="btn btn-secondary continue-shopping">
+                                    Continuar comprando
+                                </button>
+                            </div>
+
+                            <div class="payment-security">
+                                <div class="security-badges">
+                                    <div class="badge">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.9 16,12.4 16,13V16C16,17.1 15.1,18 14,18H10C8.9,18 8,17.1 8,16V13C8,12.4 8.4,11.9 9,11.5V10C9,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.2,9.2 10.2,10V11.5H13.8V10C13.8,9.2 12.8,8.2 12,8.2Z"/>
+                                        </svg>
+                                        <span>Pago seguro</span>
+                                    </div>
+                                    <div class="badge">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                                        </svg>
+                                        <span>Garantía 30 días</span>
+                                    </div>
+                                </div>
+                                <p>Todos los pagos están protegidos con encriptación SSL de nivel bancario.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2>Te podría interesar</h2>
+            <div class="related-grid" id="relatedProducts">
+                <!-- Dynamic related products will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Profesional -->
+    <footer class="footer-professional">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand-section">
+                    <div class="brand-logo">
+                        <h3>Bibliowave</h3>
+                        <div class="brand-tagline">
+                            <span class="tagline-text">El futuro de la lectura digital</span>
+                            <div class="tagline-accent"></div>
+                        </div>
+                    </div>
+                    <p class="brand-description">
+                        Plataforma líder en e-books profesionales y soluciones de ciberseguridad empresarial. 
+                        Transformando el conocimiento digital para organizaciones de vanguardia.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-navigation">
+                    <div class="nav-column">
+                        <h4>Productos</h4>
+                        <ul>
+                            <li><a href="ebooks.html">E-books Profesionales</a></li>
+                            <li><a href="blog.html">Blog de Ciberseguridad</a></li>
+                            <li><a href="biblioteca.html">Tu Biblioteca</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="about.html">Acerca de Nosotros</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="#careers">Carreras</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Soporte</h4>
+                        <ul>
+                            <li><a href="#help">Centro de Ayuda</a></li>
+                            <li><a href="#documentation">Documentación</a></li>
+                            <li><a href="#api">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#privacidad">Política de Privacidad</a></li>
+                            <li><a href="#terminos">Términos de Servicio</a></li>
+                            <li><a href="#cookies">Política de Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-professional">
+                <div class="footer-divider"></div>
+                <div class="bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 Bibliowave Technologies. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="footer-badges">
+                        <div class="security-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.9 16,12.4 16,13V16C16,17.1 15.1,18 14,18H10C8.9,18 8,17.1 8,16V13C8,12.4 8.4,11.9 9,11.5V10C9,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.2,9.2 10.2,10V11.5H13.8V10C13.8,9.2 12.8,8.2 12,8.2Z"/>
+                            </svg>
+                            <span>Certificado SSL</span>
+                        </div>
+                        <div class="quality-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2Z"/>
+                            </svg>
+                            <span>Calidad Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html> 

@@ -1,0 +1,115 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes para los libros -->
+    <linearGradient id="book1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4C5A9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B5A082;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="book2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E67E22;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D35400;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8660A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="book3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E67E22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F39C12;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="book4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E67E22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D35400;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="book5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#27AE60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </linearGradient>
+    <!-- Gradiente de fondo -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8F9FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E9ECEF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background del dispositivo -->
+  <rect width="400" height="500" fill="url(#bgGradient)" rx="40"/>
+  
+  <!-- Header -->
+  <g transform="translate(0, 40)">
+    <!-- BIBLIOWAVE title -->
+    <text x="40" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">BIBLIOWAVE</text>
+    
+    <!-- E-BOOKS button -->
+    <text x="270" y="40" font-family="Arial, sans-serif" font-size="12" fill="#666">E-BOOKS</text>
+    
+    <!-- Search and profile icons -->
+    <circle cx="320" cy="35" r="10" fill="none" stroke="#666" stroke-width="1.5"/>
+    <path d="M317 32 L323 38" stroke="#666" stroke-width="1.5"/>
+    
+    <circle cx="360" cy="35" r="12" fill="none" stroke="#666" stroke-width="1.5"/>
+    <circle cx="360" cy="30" r="4" fill="#666"/>
+    <path d="M350 42 Q360 38 370 42" stroke="#666" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- Navigation tabs -->
+  <g transform="translate(40, 120)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#2c3e50">E-BOOKS</text>
+    <text x="120" y="20" font-family="Arial, sans-serif" font-size="14" fill="#666">CATEGORIES</text>
+  </g>
+  
+  <!-- Featured e-books title -->
+  <text x="40" y="180" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">Featured e-books</text>
+  
+  <!-- E-books grid -->
+  <g transform="translate(40, 210)">
+    <!-- Fila superior: 3 libros -->
+    <!-- The Silent Patient -->
+    <g>
+      <rect x="0" y="0" width="70" height="95" rx="6" fill="url(#book1)" stroke="#B5A082" stroke-width="1"/>
+      <text x="35" y="30" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2c3e50" text-anchor="middle">THE</text>
+      <text x="35" y="42" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2c3e50" text-anchor="middle">SILENT</text>
+      <text x="35" y="54" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2c3e50" text-anchor="middle">PATIENT</text>
+      <text x="35" y="80" font-family="Arial, sans-serif" font-size="7" fill="#555" text-anchor="middle">ALEX S</text>
+      <text x="35" y="88" font-family="Arial, sans-serif" font-size="7" fill="#555" text-anchor="middle">ALEXCIER</text>
+    </g>
+    
+    <!-- Educated -->
+    <g>
+      <rect x="95" y="0" width="70" height="95" rx="6" fill="url(#book2)" stroke="#B8660A" stroke-width="1"/>
+      <text x="130" y="40" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Educated</text>
+      <text x="130" y="80" font-family="Arial, sans-serif" font-size="7" fill="#FFE5CC" text-anchor="middle">TOMA AUSER</text>
+      <!-- Figura humana estilizada -->
+      <polygon points="125,20 135,20 130,35" fill="#FFE5CC"/>
+      <circle cx="130" cy="15" r="4" fill="#FFE5CC"/>
+    </g>
+    
+    <!-- Where the Crawdads Sing -->
+    <g>
+      <rect x="190" y="0" width="70" height="95" rx="6" fill="url(#book3)" stroke="#D35400" stroke-width="1"/>
+      <rect x="195" y="5" width="60" height="20" fill="#F39C12"/>
+      <text x="225" y="17" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">WHERE</text>
+      <circle cx="215" cy="35" r="8" fill="#FFD700"/>
+      <text x="225" y="50" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">THE</text>
+      <text x="225" y="60" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">CRAWDADS</text>
+      <text x="225" y="70" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">SING</text>
+      <text x="225" y="85" font-family="Arial, sans-serif" font-size="6" fill="#FFE5CC" text-anchor="middle">CALILY OLIVER</text>
+    </g>
+    
+    <!-- Fila inferior: 2 libros centrados -->
+    <!-- Libro 4 -->
+    <g>
+      <rect x="47" y="120" width="70" height="95" rx="6" fill="url(#book4)" stroke="#B8660A" stroke-width="1"/>
+      <!-- Silueta de árboles -->
+      <path d="M50 180 Q55 160 60 180 Q65 160 70 180 Q75 160 80 180 Q85 160 90 180 Q95 160 100 180 Q105 160 110 180 Q115 160 114 180" fill="#2c3e50"/>
+    </g>
+    
+    <!-- Normal People -->
+    <g>
+      <rect x="142" y="120" width="70" height="95" rx="6" fill="url(#book5)" stroke="#229954" stroke-width="1"/>
+      <text x="177" y="150" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">NORMAL</text>
+      <text x="177" y="165" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">PEOPLE</text>
+      <!-- Iconos minimalistas -->
+      <circle cx="167" cy="180" r="8" fill="none" stroke="white" stroke-width="2"/>
+      <circle cx="187" cy="180" r="8" fill="none" stroke="white" stroke-width="2"/>
+      <path d="M172 185 Q177 190 182 185" stroke="white" stroke-width="2" fill="none"/>
+    </g>
+  </g>
+</svg> 
